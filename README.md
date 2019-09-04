@@ -16,8 +16,10 @@ This bitch-pack includes the following stuff:
 All containers have a general network to communicate without deps/links,
 also you can access hosts(containers) via service name.
 
-Default settings are placed in `./config` directory
-Default aaplication directory is `./app`
+# Defaults
+settings are placed in `./config` directory
+aplication directory is `./app`
+port settings @`.env` file
 
 # Installation
 
