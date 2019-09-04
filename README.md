@@ -23,7 +23,9 @@ Default aaplication directory is `./app`
 
 > Use the following to clone this to your side & get it up
 `$ git clone https://github.com/predatorpc/php-dev-stack.git`
+
 `$ cd php-dev-stack`
+
 `$ docker-compose up -d`
 
 Profit!
