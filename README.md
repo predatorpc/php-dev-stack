@@ -18,7 +18,9 @@ also you can access hosts(containers) via service name.
 
 # Defaults
 settings are placed in `./config` directory
+
 aplication directory is `./app`
+
 port settings @`.env` file
 
 # Installation
