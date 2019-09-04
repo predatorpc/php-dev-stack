@@ -17,9 +17,11 @@ All containers have a general network to communicate without deps/links,
 also you can access hosts(containers) via service name.
 
 # Defaults
-> settings are placed in `./config` directory
-> aplication directory is `./app`
-> port settings @`.env` file
+settings are placed in `./config` directory
+
+aplication directory is `./app`
+
+port settings @`.env` file
 
 # Installation
 
