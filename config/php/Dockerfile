@@ -59,6 +59,9 @@ RUN apt-get -qq update && apt-get -qq -y install  \
     && rm -rf /tmp/blackfire /tmp/blackfire-probe.tar.gz \
   && rm -rf /var/lib/apt/lists/*
 
+# Midnight commander
+RUN apt-get update && apt-get install mc -y
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer --version
 
@@ -74,6 +77,8 @@ RUN pecl install mongodb \
 # Permission fix
 RUN usermod -u 1000 www-data
 
-CMD ["php-fpm"]
+# This for case, when you won't use supervisord to start FPM
+# uncoment this and remove fmp.conf then
 
-EXPOSE 9000
+#CMD ["php-fpm"]
+#EXPOSE 9000
