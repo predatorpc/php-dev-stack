@@ -114,6 +114,21 @@ services:
 #           - /var/run/docker.sock:/var/run/docker.sock
 #           - /opt/portainer/data:/data
 
+    postgres:
+         build: ./config/postgres
+         container_name: postgres
+         restart: always
+         ports:
+            - 5432:5432
+         volumes:
+            - ./postgres-data:/var/lib/postgresql/data
+         environment:
+            POSTGRES_ROOT_PASSWORD: ${POSTGRES_ROOT_PASSWORD}
+            POSTGRES_DB: ${POSTGRES_DB}
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+            TIMEZONE: ${TIMEZONE}
+            command: postgres -c shared_buffers=512MB -c effective_cache_size=1536MB -c work_mem=2621kB -c maintenance_work_mem=128MB
 networks:
     app-network:
         driver: bridge
