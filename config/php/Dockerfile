@@ -59,6 +59,8 @@ RUN apt-get -qq update && apt-get -qq -y install  \
     && rm -rf /tmp/blackfire /tmp/blackfire-probe.tar.gz \
   && rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo pdo_pgsql
+
 # Midnight commander
 RUN apt-get update && apt-get install mc -y
 
