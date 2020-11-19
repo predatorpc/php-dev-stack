@@ -1,0 +1,5 @@
+2020/11/18 17:26:16 [emerg] 1#1: invalid number of arguments in "fastcgi_pass" directive in /etc/nginx/conf.d/default.conf:44
+2020/11/18 17:26:33 [emerg] 1#1: invalid number of arguments in "fastcgi_pass" directive in /etc/nginx/conf.d/default.conf:44
+2020/11/18 17:26:45 [emerg] 1#1: invalid number of arguments in "fastcgi_pass" directive in /etc/nginx/conf.d/default.conf:44
+2020/11/18 17:27:19 [crit] 6#6: *2 connect() to unix:/sock/fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 192.168.96.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/sock/fpm.sock:", host: "localhost"
+2020/11/18 17:27:22 [crit] 6#6: *2 connect() to unix:/sock/fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 192.168.96.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/sock/fpm.sock:", host: "localhost"
